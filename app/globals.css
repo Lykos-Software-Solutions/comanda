@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-wa-bg: #0b141a;
+  --color-wa-panel: #111b21;
+  --color-wa-in: #202c33;
+  --color-wa-out: #005c4b;
+  --color-wa-accent: #00a884;
+  --color-ink: #e9edef;
+  --color-ink-dim: #8696a0;
+}
+
+body {
+  background: var(--color-wa-bg);
+  color: var(--color-ink);
+}
