@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "comanda",
+  "compatibility_date": "2026-08-27",
+  // Sin `main`: es un Worker solo de assets. La demo es un export estatico,
+  // no hay codigo de servidor que ejecutar — el parser corre en el navegador.
+  "assets": {
+    "directory": "out",
+    "not_found_handling": "404-page",
+  },
+  "routes": [{ "pattern": "comanda.lykos.com.ar", "custom_domain": true }],
+}
